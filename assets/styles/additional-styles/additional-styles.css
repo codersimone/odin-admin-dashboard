@@ -1,0 +1,38 @@
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 34px;
+  padding: 16px;
+  background-color: #2196f3;
+  color: #fff;
+
+}
+
+.sidebar .logo {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.sidebar .logo-img {
+  width: 46px;
+}
+
+nav ul li {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 40px 1fr;
+  padding-left: 10px;
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.nav-bottom {
+  margin-top: 50px;
+}
