@@ -17,7 +17,7 @@
         <img class='logo-img' src='./assets/icons/01_view-dashboard.svg' alt='Odin dashboard logo' />
         <p>Dashboard</p>
       </div>
-      <nav>
+      <nav class='nav-menu'>
         <ul>
           <li>
             <img src='./assets/icons/02_home.svg' alt='Home icon' />
@@ -62,28 +62,40 @@
     </aside>
 <!-- Header -->
     <header class='header-menu'>
-      <div class='search-bar'>
-        <img src='./assets/icons/11_magnify.svg' alt='Magnifying glass icon' />
-        <input type='text' />
+        <div class='top-row'>
+            <div class='search-bar'>
+              <div class='search'>
+                <img src='./assets/icons/11_magnify.svg' alt='Magnifying glass icon' />
+                <input class='search-input' type='text' />
+              </div>
+            </div>
 
-        <img src='./assets/icons/12_bell-ring-outline.svg' alt='Bell icon' />
-        <img src='./assets/icons/17_avatar_male_man_person_user_icon.svg' alt='Male user avatar icon' />
-        <p>Morgan Oakley</p>
-
-        <img src='./assets/icons/17_avatar_male_man_person_user_icon.svg' alt='Male user avatar icon' />
-        <p>Hi there,</p>
-        <p>Morgan Oakley (@morgan)</p>
-
-        <div class='buttons'>
-          <button>New</button>
-          <button>Upload</button>
-          <button>Share</button>
+            <div class='user-account'>
+              <img src='./assets/icons/12_bell-ring-outline.svg' alt='Bell icon' />
+              <img class='user-avatar' src='./assets/icons/17_avatar_male_man_person_user_icon.svg' alt='Male user avatar icon' />
+              <p>Morgan Oakley</p>
+            </div>
         </div>
-      </div>
+
+        <div class='bottom-row'>
+            <div class='user-greeting'>
+              <img class='avatar' src='./assets/icons/17_avatar_male_man_person_user_icon.svg' alt='Male user avatar icon' />
+              <div class='greeting'>
+                <p>Hi there,</p>
+                <p class='user-name'>Morgan Oakley (@morgan)</p>
+              </div>
+            </div>
+
+            <div class='buttons'>
+              <button>New</button>
+              <button>Upload</button>
+              <button>Share</button>
+            </div>
+        </div>
     </header>
 <!-- Main content -->
     <main class='main-content'>
-<!-- Your Projects -->
+<!-- Projects -->
       <div class='article'>
         <h3>Your Projects</h3>
         <div class='card'>
