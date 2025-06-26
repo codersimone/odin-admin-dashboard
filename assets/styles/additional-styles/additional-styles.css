@@ -6,33 +6,116 @@
   grid-template-rows: auto 1fr;
   gap: 34px;
   padding: 16px;
-  background-color: #2196f3;
+  background: #2196f3;
   color: #fff;
 
 }
 
-.sidebar .logo {
+.logo {
   display: grid;
   grid-template-columns: 2fr 6fr;
   font-size: 26px;
   font-weight: 600;
 }
 
-.sidebar .logo-img {
+.logo-img {
   width: 46px;
 }
 
-nav ul li {
+.nav-menu ul li {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 40px 1fr;
+  align-items: center;
   padding-left: 10px;
   margin-bottom: 4px;
   font-size: 20px;
   font-weight: 600;
-  align-items: center;
 }
 
 .nav-bottom {
   margin-top: 50px;
+}
+
+/* Header */
+.header-menu {
+  grid-area: header;
+  display: grid;
+  min-width: 760px;
+  padding: 24px 44px;
+  background: #fff;
+}
+
+.top-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.bottom-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.search-bar {
+  display: grid;
+  align-items: center;
+  max-width: 560px;
+}
+
+
+.search {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px;
+}
+
+.search-input {
+  padding: 2px 14px;
+  background: #e8edf3;
+  border: none;
+  border-radius: 20px;
+}
+
+.user-account {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  justify-self: end;
+  align-items: center;
+  gap: 24px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.user-avatar {
+  width: 44px;
+}
+
+.user-greeting {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 70px;
+}
+
+.greeting {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-name {
+  font-size: 24px;
+}
+
+.buttons {
+  display: grid;
+  justify-content: end;
+  grid-auto-flow: column;
+  gap: 24px;
 }
