@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+img {
+  width: 24px;
+}
+
+button {
+  min-width: 100px;
+  margin: 16px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--light-blue);
+  color: var(--gray);
+  overflow: hidden;
+}
+
+.sidebar,
+.logo,
+.nav-menu ul li a,
+.header-menu,
+.top-row,
+.bottom-row,
+.search-bar,
+.search,
+.user-account,
+.user-greeting,
+.buttons,
+.main-content,
+.card-container,
+.card,
+.text-container p:first-child,
+.icons,
+.right-column,
+.announcements-box,
+.trending-box,
+.trending-box > div,
+.user-info {
+  display: grid;
+}
+
+.logo, 
+.notification-bell,
+.card, 
+.user-info {
+  cursor: pointer;
+}
+
+.logo,
+.nav-menu ul li a,
+.user-account,
+.greeting,
+.text-container p:first-child,
+.announcements-title,
+.user-info p:first-child {
+  font-weight: 600;
+}
+
+.user-avatar,
+.trending-box img {
+  width: 44px;
+}
+
+.card,
+.announcements-box,
+.trending-box {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px var(--black-08);
+}
+
+.text-container p:last-child,
+.announcements-text,
+.user-info {
+  line-height: 18px;
+}
+
+.announcements-box,
+.trending-box {
+  margin: 16px 0px;
+}
+
+.announcement-item:not(:last-child) {
+  margin-bottom: 12px;
+  border-bottom: 2px solid var(--light-gray);
+}
