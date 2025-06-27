@@ -6,7 +6,7 @@
   <title>Odin admin dashboard</title>
   <link rel='stylesheet' href='./assets/styles/reset-modern/reset-modern.css'>
   <link rel='stylesheet' href='./assets/styles/variables/variables.css'>
-  <link rel='stylesheet' href='./assets/styles/base.css'>
+  <link rel='stylesheet' href='./assets/styles/general.css'>
   <link rel='stylesheet' href='./assets/styles/additional-styles/additional-styles.css'>
 </head>
 <body>
@@ -14,48 +14,64 @@
 <!-- Sidebar -->
     <aside class='sidebar'>
       <div class='logo'>
-        <img class='logo-img' src='./assets/icons/01_view-dashboard.svg' alt='Odin dashboard logo' />
+        <img src='./assets/icons/01_view-dashboard.svg' alt='Odin dashboard logo' />
         <p>Dashboard</p>
       </div>
       <nav class='nav-menu'>
         <ul>
           <li>
-            <img src='./assets/icons/02_home.svg' alt='Home icon' />
-            <a href='#'>Home</a>
+            <a href='#'>
+              <img src='./assets/icons/02_home.svg' alt='Home icon' />
+              Home
+            </a>
           </li>
           <li>
-            <img src='./assets/icons/03_card-account-details-outline.svg' alt='Business card icon' />
-            <a href='#'>Profile</a>
+            <a href='#'>
+              <img src='./assets/icons/03_card-account-details-outline.svg' alt='Business card icon' />
+              Profile
+            </a>
           </li>
           <li>
-            <img src='./assets/icons/04_message-reply.svg' alt='Message icon' />
-            <a href='#'>Messages</a>
+            <a href='#'>
+              <img src='./assets/icons/04_message-reply.svg' alt='Message icon' />
+              Messages
+            </a>
           </li>
           <li>
-            <img src='./assets/icons/05_clock-time-three.svg' alt='Clock icon' />
-            <a href='#'>History</a>
+            <a href='#'>
+              <img src='./assets/icons/05_clock-time-three.svg' alt='Clock icon' />
+              History
+            </a>
           </li>
           <li>
-            <img src='./assets/icons/06_note-multiple.svg' alt='Notes icon' />
-            <a href='#'>Tasks</a>
+            <a href='#'>
+              <img src='./assets/icons/06_note-multiple.svg' alt='Notes icon' />
+              Tasks
+            </a>
           </li>
           <li>
-            <img src='./assets/icons/07_account-group.svg' alt='Communitie icon' />
-            <a href='#'>Communities</a>
-          </li>
-        </ul>
-        <ul class='nav-bottom'>
-          <li>
-            <img src='./assets/icons/08_cog.svg' alt='Cog icon' />
-            <a href='#'>Settings</a>
+            <a href='#'>
+              <img src='./assets/icons/07_account-group.svg' alt='Communitie icon' />
+              Communities
+            </a>
           </li>
           <li>
-            <img src='./assets/icons/09_help-box.svg' alt='Question mark on the square icon' />
-            <a href='#'>Support</a>
+            <a href='#'>
+              <img src='./assets/icons/08_cog.svg' alt='Cog icon' />
+              Settings
+            </a>
           </li>
           <li>
-            <img src='./assets/icons/10_shield-check.svg' alt='Checkmark on the shield icon' />
-            <a href='#'>Privacy</a>
+            <a href='#'>
+              <img src='./assets/icons/09_help-box.svg' alt='Question mark on the square icon' />
+              Support
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              <img src='./assets/icons/10_shield-check.svg' alt='Checkmark on the shield icon' />
+              Privacy
+            </a>
           </li>
         </ul>
       </nav>
@@ -71,7 +87,7 @@
             </div>
 
             <div class='user-account'>
-              <img src='./assets/icons/12_bell-ring-outline.svg' alt='Bell icon' />
+              <img class='notification-bell' src='./assets/icons/12_bell-ring-outline.svg' alt='Bell icon' />
               <img class='user-avatar' src='./assets/icons/17_avatar_male_man_person_user_icon.svg' alt='Male user avatar icon' />
               <p>Morgan Oakley</p>
             </div>
@@ -79,7 +95,7 @@
 
         <div class='bottom-row'>
             <div class='user-greeting'>
-              <img class='avatar' src='./assets/icons/17_avatar_male_man_person_user_icon.svg' alt='Male user avatar icon' />
+              <img src='./assets/icons/17_avatar_male_man_person_user_icon.svg' alt='Male user avatar icon' />
               <div class='greeting'>
                 <p>Hi there,</p>
                 <p class='user-name'>Morgan Oakley (@morgan)</p>
@@ -96,124 +112,164 @@
 <!-- Main content -->
     <main class='main-content'>
 <!-- Projects -->
-      <div class='article'>
+      <section>
         <h3>Your Projects</h3>
-        <div class='card'>
-          <p class='title'>Super Cool Project</p>
-          <p>
-            Sed tempus ut lacus ut scelerisque.
-            Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.
-          </p>
-          <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
-          <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
-          <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
-        </div>
+        <div class='card-container'>
+          <div class='card'>
+            <div class='text-container'>
+              <p>Super Cool Project</p>
+              <p>
+                Sed tempus ut lacus ut scelerisque.
+                Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.
+              </p>
+            </div>
+            <div class='icons'>
+              <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
+              <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
+              <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
+            </div>
+          </div>
+
+          <div class='card'>
+            <div class='text-container'>
+              <p>Less Cool Project</p>
+              <p>
+                Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.
+              </p>
+            </div>
+            <div class='icons'>
+              <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
+              <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
+              <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
+            </div>
+          </div>
         
-        <div class='card'>
-          <p class='title'>Less Cool Project</p>
-          <p>
-            Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.
-          </p>
-          <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
-          <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
-          <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
-        </div>
+          <div class='card'>
+            <div class='text-container'>
+              <p>Impossible App</p>
+              <p>
+                In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.
+              </p>
+            </div>
+            <div class='icons'>
+              <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
+              <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
+              <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
+            </div>
+          </div>
         
-        <div class='card'>
-          <p class='title'>Impossible App</p>
-          <p>
-            In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.
-          </p>
-          <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
-          <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
-          <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
-        </div>
+          <div class='card'>
+            <div class='text-container'>
+              <p>Easy Peasy App</p>
+              <p>
+                Etiam cursus eros ac efficitur fringilla.
+                Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.
+              </p>
+            </div>
+            <div class='icons'>
+              <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
+              <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
+              <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
+            </div>
+          </div>
         
-        <div class='card'>
-          <p class='title'>Easy Peasy App</p>
-          <p>
-            Etiam cursus eros ac efficitur fringilla.
-            Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.
-          </p>
-          <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
-          <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
-          <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
-        </div>
+          <div class='card'>
+            <div class='text-container'>
+              <p>Ad Blocker</p>
+              <p>
+                Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
+              </p>
+            </div>
+            <div class='icons'>
+              <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
+              <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
+              <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
+            </div>
+          </div>
         
-        <div class='card'>
-          <p class='title'>Ad Blocker</p>
-          <p>
-            Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
-          </p>
-          <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
-          <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
-          <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
+          <div class='card'>
+            <div class='text-container'>
+              <p>Money Maker</p>
+              <p>
+                Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                Pellentesque mollis nec sem vel aliquam.
+              </p>
+            </div>
+            <div class='icons'>
+              <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
+              <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
+              <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
+            </div>
+          </div>
         </div>
-        
-        <div class='card'>
-          <p class='title'>Money Maker</p>
-          <p>
-            Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.
-            Pellentesque mollis nec sem vel aliquam.
-          </p>
-          <img src='./assets/icons/13_star-plus-outline.svg' alt='Star icon' />
-          <img src='./assets/icons/14_eye-plus-outline.svg' alt='Eye icon' />
-          <img src='./assets/icons/15_source-fork.svg' alt='Source fork icon' />
-        </div>
+      </section>
 <!-- Announcements -->
-        <div class='article'>
-          <h3>Announcements</h3>
-          <div>
-            <h4>Site Maintenance</h4>
-            <p>
-              Vesuloulum conalmentum lenlus lacus. in accumsan elit maximus ac. Donec hendrerit sodales congue...
-            </p>
-          </div>
+        <div class='right-column'>
+          <section class='announcements'>
+            <h3>Announcements</h3>
+            <div class='announcements-box'>
+              <div class='announcement-item'>
+                <p class='announcements-title'>Site Maintenance</p>
+                <p class='announcements-text'>
+                  Vesuloulum conalmentum lenlus lacus. in accumsan elit maximus ac. Donec hendrerit sodales congue...
+                </p>
+              </div>
 
-          <div>
-            <h4>Community Share Day</h4>
-            <p>
-              Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum
-              accumsan poriuitor...
-            </p>
-          </div>
+              <div class='announcement-item'>
+                <p class='announcements-title'>Community Share Day</p>
+                <p class='announcements-text'>
+                  Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum
+                  accumsan poriuitor...
+                </p>
+              </div>
 
-          <div>
-            <h4>Updated Privacy Policy</h4>
-            <p>
-              Phasellus efficitur nisi eget elit
-              consecietur. eaer conaimentum ante auctor. Cras fringilla sagittis sem in mailis...
-            </p>
-          </div>
-        </div>
+              <div class='announcement-item'>
+                <p class='announcements-title'>Updated Privacy Policy</p>
+                <p class='announcements-text'>
+                  Phasellus efficitur nisi eget elit
+                  consecietur. eaer conaimentum ante auctor. Cras fringilla sagittis sem in mailis...
+                </p>
+              </div>
+            </div>
+          </section>
 <!-- Trending -->
-        <div class='article'>
-          <h3>Trending</h3>
-          <div>
-            <img src='./assets/icons/18_business man_male_user_avatar_profile_icon.svg' alt='Male user avatar icon' />
-            <p>@tegan</p>
-            <p>World Peace Builder</p>
-          </div>
+          <section class='trending'>
+            <h3>Trending</h3>
+            <div class='trending-box'>
+              <div>
+                <img src='./assets/icons/18_business man_male_user_avatar_profile_icon.svg' alt='Male user avatar icon' />
+                <div class='user-info'>
+                  <p>@tegan</p>
+                  <p>World Peace Builder</p>
+                </div>
+              </div>
 
-          <div>
-            <img src='./assets/icons/17_avatar_male_man_person_user_icon.svg' alt='Male user avatar icon' />
-            <p>@morgan</p>
-            <p>Super Cool Project</p>
-          </div>
+              <div>
+                <img src='./assets/icons/17_avatar_male_man_person_user_icon.svg' alt='Male user avatar icon' />
+                <div class='user-info'>
+                  <p>@morgan</p>
+                  <p>Super Cool Project</p>
+                </div>
+              </div>
 
-          <div>
-            <img src='./assets/icons/16_avatar_user_woman_female_person_icon.svg' alt='Female user avatar icon' />
-            <p>@kendall</p>
-            <p>Life Changing App</p>
-          </div>
+              <div>
+                <img src='./assets/icons/16_avatar_user_woman_female_person_icon.svg' alt='Female user avatar icon' />
+                <div class='user-info'>
+                  <p>@kendall</p>
+                  <p>Life Changing App</p>
+                </div>
+              </div>
 
-          <div>
-            <img src='./assets/icons/19_avatar_male_man_mature_old_icon.svg' alt='Male user avatar icon' />
-            <p>@alex</p>
-            <p>No Traffic Maker</p>
-          </div>
+              <div>
+                <img src='./assets/icons/19_avatar_male_man_mature_old_icon.svg' alt='Male user avatar icon' />
+                <div class='user-info'>
+                  <p>@alex</p>
+                  <p>No Traffic Maker</p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
     </main>
   </div>
 </body>
