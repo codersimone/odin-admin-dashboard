@@ -4,5 +4,8 @@
   --blue: rgb(25, 146, 212);
   --light-blue: rgb(226,232,240);
   --gray: rgb(70, 70, 70);
-  --light-gray: rgb(140,140,140);
+  --light-gray: rgb(144, 143, 143);
+  --yellow: rgb(251, 188, 4);
+  /* Transparency */
+  --black-08: rgba(0, 0, 0, 0.08);
 }
