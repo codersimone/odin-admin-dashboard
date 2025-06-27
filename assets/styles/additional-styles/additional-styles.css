@@ -116,7 +116,7 @@
 
 .card {
   grid-template-rows: 2fr 1fr;
-  height: 220px;
+  height: 210px;
   gap: 8px;
   padding: 20px;
   background: var(--white);
@@ -147,7 +147,7 @@
 .right-column {
   grid-template-rows: repeat(2, 1fr);
   max-width: 280px;
-  max-height: 840px;
+  max-height: 996px;
 }
 
 .announcements-box {
@@ -166,9 +166,9 @@
 }
 
 /* Trending */
-.trending {
+/* .trending {
   margin-top: 20px;
-}
+} */
 
 .trending-box {
   grid-template-rows: repeat(4, auto);
