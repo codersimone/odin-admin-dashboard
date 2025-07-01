@@ -45,7 +45,7 @@ This color system provides a clean, modern, and visually accessible interface.
 ## Resources Used
 
 -   A freely distributed Font for clean and versatile typography from a free library [Google Fonts - Roboto](https://fonts.google.com/specimen/Roboto).
--   SVG icons for avatars and content sources for user interface elements (stored locally in `/assets/icons') from free packages:
+-   SVG icons for avatars and content sources for user interface elements (stored locally in `/assets/icons`) from free packages:
     -   [Material Design Icons](https://pictogrammers.com/library/mdi/) by [Michael Richins](https://pictogrammers.com/contributor/MrGrigri/) on [Pictogrammers](https://pictogrammers.com/).
     -   [Flatflow icons](https://www.iconfinder.com/search/icons?family=flatflow) by [Anna Litviniuk](https://www.iconfinder.com/Naf_Naf) on [Iconfinder](https://www.iconfinder.com/).
 -   CSS Grid and Flexbox — for layout structuring.
