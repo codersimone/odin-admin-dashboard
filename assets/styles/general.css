@@ -3,7 +3,7 @@
 html,
 body {
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: var(--light-blue);
   color: var(--gray);
 }
@@ -33,8 +33,8 @@ img {
   grid-template-columns: 280px 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas:
-    "sidebar header"
-    "sidebar main";
+    'sidebar header'
+    'sidebar main';
   width: 100vw;
   min-height: 100vh;
 }
@@ -113,9 +113,9 @@ img {
 .burger-menu {
   display: none;
   grid-area: header;
+  width: fit-content;
   padding: 2px;
   z-index: 1000;
-  width: fit-content;
   border: none;
 }
 

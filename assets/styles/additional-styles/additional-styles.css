@@ -41,17 +41,13 @@
 .header-menu {
   grid-area: header;
   min-width: 760px;
+  gap: 16px;
   padding: 24px 44px;
   background: var(--white);
   box-shadow: 0 6px 8px var(--black-08);
-  gap: 16px;
 }
 
-.top-row {
-  grid-template-columns: 2fr 1fr;
-  gap: 16px;
-}
-
+.top-row,
 .bottom-row {
   grid-template-columns: 2fr 1fr;
   gap: 16px;
@@ -63,8 +59,8 @@
 
 .search {
   grid-template-columns: auto 1fr;
-  gap: 6px;
   align-items: center;
+  gap: 6px;
 }
 
 .search-input {

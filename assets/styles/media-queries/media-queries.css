@@ -35,13 +35,13 @@
 
   .nav-menu ul li a {
     grid-template-rows: 30px 1fr;
-    font-size: 16px;
     padding-left: 8px;
+    font-size: 16px;
   }
 
   .nav-menu ul li img {
-  padding-right: 14px;
-}
+    padding-right: 14px;
+  }
 
   .header-menu {
     min-width: unset;
@@ -65,8 +65,8 @@
   }
 
   .right-column {
-    max-width: 100%;
     grid-template-rows: auto auto;
+    max-width: 100%;
   }
 }
 
@@ -75,23 +75,22 @@
   .container {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "header"
-      "main";
+      'header'
+      'main';
   }
 
   .sidebar {
-    transition: transform 0.1s ease-in-out;
-    transform: translateX(-100%);
     position: fixed;
     top: 0;
     left: 0;
     width: 50%;
     height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.1s ease-in-out;
   }
 
   .logo {
     font-size: 24px;
-    cursor: pointer;
   }
 
   .logo img {
@@ -104,9 +103,9 @@
   }
 
   .header-menu {
+    justify-content: center;
     min-width: unset;
     padding: 60px 8px 10px 8px;
-    justify-content: center;
   }
 
   .top-row, 
@@ -141,8 +140,8 @@
 
 /* Burger-menu */
   .burger-menu {
-    display: block;
     position: absolute;
+    display: block;
     top: 18px;
     left: 48%;
   }
@@ -179,8 +178,8 @@
   }
 
   .nav-menu ul li img {
-    padding-right: 6px;
     width: 18px;
+    padding-right: 6px;
   }
 
   .header-menu {
