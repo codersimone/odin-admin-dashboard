@@ -62,3 +62,5 @@ This color system provides a clean, modern, and visually accessible interface.
 -   **Performance Optimization:** Minify CSS and optimize images/icons for faster load times.
 
 ## Published Website
+
+https://codersimone.github.io/odin-admin-dashboard/
