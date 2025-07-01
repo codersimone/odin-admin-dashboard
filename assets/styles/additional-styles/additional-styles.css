@@ -2,14 +2,20 @@
 .sidebar {
   grid-area: sidebar;
   grid-template-rows: auto 1fr;
-  gap: 34px;
+  gap: 30px;
   padding: 16px;
   background: var(--blue);
   color: var(--white);
 }
 
-.logo {
-  grid-template-columns: 2fr 6fr;
+.logo,
+.nav-menu ul li a {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.logo {  
+  gap: 12px;
   font-size: 26px;
 }
 
@@ -17,17 +23,18 @@
   width: 46px;
 }
 
-.nav-menu ul li a {
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 40px 1fr;
-  align-items: center;
-  padding-left: 10px;
-  margin-bottom: 4px;
-  font-size: 20px;
+.nav-menu ul li:nth-last-child(3) {
+  margin-top: 30px;
 }
 
-.nav-menu ul li:nth-last-child(3) {
-  margin-top: 50px;
+.nav-menu ul li a {
+  grid-template-rows: 40px 1fr;
+  padding-left: 10px;
+  font-size: 22px;
+}
+
+.nav-menu ul li img {
+  padding-right: 20px;
 }
 
 /* Header */
@@ -37,12 +44,12 @@
   padding: 24px 44px;
   background: var(--white);
   box-shadow: 0 6px 8px var(--black-08);
+  gap: 16px;
 }
 
 .top-row {
   grid-template-columns: 2fr 1fr;
   gap: 16px;
-  margin-bottom: 28px;
 }
 
 .bottom-row {
@@ -51,13 +58,13 @@
 }
 
 .search-bar {
-  align-items: center;
   max-width: 560px;
 }
 
 .search {
   grid-template-columns: auto 1fr;
   gap: 6px;
+  align-items: center;
 }
 
 .search-input {
@@ -78,7 +85,7 @@
 .user-greeting {
   grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 .user-greeting img {
@@ -96,7 +103,8 @@
 .buttons {
   grid-auto-flow: column;
   justify-content: end;
-  gap: 24px;
+  align-items: center;
+  gap: 20px;
 }
 
 /* Main content */
@@ -166,10 +174,6 @@
 }
 
 /* Trending */
-/* .trending {
-  margin-top: 20px;
-} */
-
 .trending-box {
   grid-template-rows: repeat(4, auto);
   gap: 14px;
