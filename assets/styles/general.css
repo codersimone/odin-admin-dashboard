@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html,
 body {
-  height: 100vh;
+  height: 100%;
   font-family: "Roboto", sans-serif;
+  background: var(--light-blue);
+  color: var(--gray);
 }
 
 h3 {
@@ -14,9 +17,9 @@ img {
   width: 24px;
 }
 
-button {
-  min-width: 100px;
-  margin: 16px 0px;
+.buttons button {
+  min-width: 80px;
+  height: 30px;
   font-size: 14px;
   font-weight: 600;
   background: var(--blue);
@@ -25,6 +28,7 @@ button {
 }
 
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: 280px 1fr;
   grid-template-rows: auto 1fr;
@@ -33,9 +37,6 @@ button {
     "sidebar main";
   width: 100vw;
   min-height: 100vh;
-  background: var(--light-blue);
-  color: var(--gray);
-  overflow: hidden;
 }
 
 .sidebar,
@@ -65,7 +66,8 @@ button {
 .logo, 
 .notification-bell,
 .card, 
-.user-info {
+.user-info,
+.burger-menu {
   cursor: pointer;
 }
 
@@ -105,4 +107,28 @@ button {
 .announcement-item:not(:last-child) {
   margin-bottom: 12px;
   border-bottom: 2px solid var(--light-gray);
+}
+
+/* Burger-menu */
+.burger-menu {
+  display: none;
+  grid-area: header;
+  padding: 2px;
+  z-index: 1000;
+  width: fit-content;
+  border: none;
+}
+
+.burger-menu img {
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.5s ease;
+}
+
+.burger-icon {
+  display: block;
+}
+
+.cross-close-icon {
+  display: none;
 }
